@@ -8,7 +8,7 @@ function Formulaire() {
     const [nomError, setNomError] = useState('');
     const [prenomError, setPrenomError] = useState('');
   
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
       // Vérification du format de l'adresse Gmail
